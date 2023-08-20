@@ -2,11 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Martinez Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Your Portfolio</title>
 </head>
 <body>
-    <h1>THis is my Portfolio</h1>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Christian Martinez</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p> I am a passionate Computer Science graduate from Brigham Young University of Idaho. My journey has led me to fascinating avenues in the tech world, where I am currently an QA Engineer Intern.
+                I have a solid foundation in Computer Science, which I've honed my skills in various tools and technologies. I am well-versed in utilizing Git and Azure DevOps for streamlined development processes. 
+                My professional pursuits aside, I'm not just a tech enthusiast I'm also a dedicated gamer, both in the digital realm and around the board. However, my interests extend beyond screens. I find joy in the great outdoors, any opportunity to hike, camp, and explore. My cherished moments are often spent surrounded by friends and family, making memories.
+                In addition to these passions, I really enjoy reading books. Exploring new worlds through literature is a pastime that keeps me grounded and fuels my creativity. As I continue to learn and grow, I hold a vision of becoming a skilled software developer one day, where I can contribute innovative solutions to complex challenges in the tech industry.
+                With a fervor for technology and a burning desire to shape the future as a software developer, I am excited for the adventures that lie ahead. Feel free to reach out to me whether it's a coding conundrum, a book recommendation, or discussions about the exciting realm of software development!</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-filter">
+                <button class="filter-button active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="web">Web</button>
+                <button class="filter-button" data-filter="mobile">Mobile</button>
+                <button class="filter-button" data-filter="design">Design</button>
+            </div>
+            <div class="project-grid" id="project-grid">
+                <!-- Project cards will be dynamically loaded here -->
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
